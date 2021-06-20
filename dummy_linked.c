@@ -49,13 +49,13 @@ int main(void)
     else
     {
         cur = head;
-        //printf("%d  ", cur->data);   // 첫 번째 데이터 출력
+        printf("%d  ", cur->data); // 첫 번째 데이터 출력
 
-        //while (cur->next != NULL)    // 두 번째 이후의 데이터 출력
-        //{
-        //	cur = cur->next;
-        //	printf("%d  ", cur->data);
-        //}
+        while (cur->next != NULL) // 두 번째 이후의 데이터 출력
+        {
+            cur = cur->next;
+            printf("%d  ", cur->data);
+        }
         while (cur->next != NULL) // 두 번째 이후의 데이터 출력
         {
             cur = cur->next;
